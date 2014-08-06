@@ -18,6 +18,7 @@ public class WordCountServiceImpl implements WordCountService {
 
     @Override
     public void consume(SmsMessage message) {
-
+        System.out.println("TODO.");
+        //TODO
     }
 }

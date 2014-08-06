@@ -15,11 +15,16 @@ public interface MessageBroker {
      * Remove the subscriber from listening and receiving SMS messages.
      * @param consumer
      */
-    public void removeSubsriber(SmsConsumer consumer);
+    public void removeSubscriber(SmsConsumer consumer);
 
     /**
      * Receive new message from message producer and publish it to all the subscribers.
      * @param message
      */
     public void receive(final SmsMessage message);
+
+    /**
+     * Shutdown broker and cleanup all resources.
+     */
+    public void shutdown();
 }

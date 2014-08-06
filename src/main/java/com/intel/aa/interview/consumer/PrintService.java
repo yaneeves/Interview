@@ -4,10 +4,12 @@ import com.intel.aa.interview.data.SmsMessage;
 
 public class PrintService implements SmsConsumer {
 
-    private String messageText;
+    private int messageCounter = 0;
 
     @Override
-    public void consume(SmsMessage message) {
-        System.out.println(message.getUserId() + ", " + message.getText());
+    public synchronized void consume(SmsMessage message) {
+        messageCounter++;
+//        System.out.println(message.getUserId() + ", " + message.getText());
+        System.out.println(messageCounter);
     }
 }
