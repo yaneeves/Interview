@@ -5,6 +5,7 @@ Interviews
 
 1. Print service – prints all the messages to the console.
 2.	Word count service – counts all the words that appear in the messages:
+
   a.	Total occurrences per word.
   b.	Total occurrences per word per user.
 
