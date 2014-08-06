@@ -2,6 +2,7 @@ Interviews
 ==========
 ##Instructions for Java exercise – SMS messages
 3 users with a smartphone each, are sending SMS messages simultaneously. The messages are sent to a message broker that distributes the messages to the following consumers:
+
 1. Print service – prints all the messages to the console.
 2.	Word count service – counts all the words that appear in the messages:
   a.	Total occurrences per word.
