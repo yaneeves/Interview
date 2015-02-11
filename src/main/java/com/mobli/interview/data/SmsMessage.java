@@ -1,4 +1,4 @@
-package com.intel.aa.interview.data;
+package com.mobli.interview.data;
 
 import java.util.Date;
 

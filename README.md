@@ -4,22 +4,22 @@ Interviews
 3 users with a smartphone each, are sending SMS messages simultaneously. The messages are sent to a message broker that distributes the messages to the following consumers:
 
 1. Print service – prints all the messages to the console.
-2.	Word count service – counts all the words that appear in the messages:
-  a.	Total occurrences per word.
-  b.	Total occurrences per word per user.
+2. Word count service – Counts the total occurrences per word in a message
 
-###Part I – Implementation (45 minutes)
+
+###Part I – Implementation
 Your task is to implement the scenario described above, where some of the classes are already given. You will need to implement the following interfaces:
 
-1.	`MessageBroker`
-2.	`WordCountService`
+1.	`MessageBrokerImpl`
+2.	`WordCountServiceImpl`
 
 Run the program using the test class `SmartphoneTest`.
 
-###Part II – Discussion (30 minutes)
-In this part, we ask you to explain what you did in the previous part and what are the considerations and problems you encountered during the implementation. 
+Comments:
+* Please make sure that your MessageBrokerImpl is thread safe as multiple producers and consumers could use the broker at the same time
+* The word count should not be case sensitive
 
-**Important:** Full implementation of the exercise is not mandatory. The main idea is how you approach the problem and the considerations you take implementing it.
-
-Schematic illustration of the SMS message task
+###Part II – Logging
+You're team leader asked you to add logging to your app using a common logging framework (for example log4j).
+Please add such dependency to your project pom file and create an INFO log call every time SimpleSmsProducer send a message to the broker.
  

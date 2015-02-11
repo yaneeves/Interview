@@ -1,15 +1,11 @@
-package com.intel.aa.interview.producer;
+package com.mobli.interview.producer;
 
-import com.intel.aa.interview.broker.MessageBroker;
-import com.intel.aa.interview.data.SmsMessage;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.mobli.interview.broker.MessageBroker;
+import com.mobli.interview.data.SmsMessage;
 
 public class SimpleSmsProducer implements SmsProducer {
 
     private MessageBroker broker;
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(SimpleSmsProducer.class);
 
     public SimpleSmsProducer(MessageBroker broker) {
         this.broker = broker;
@@ -21,7 +17,6 @@ public class SimpleSmsProducer implements SmsProducer {
             @Override
             public void run() {
                 broker.receive(message);
-                LOGGER.info("SMS sent to broker.");
             }
         };
         Thread thread = new Thread(runnable);

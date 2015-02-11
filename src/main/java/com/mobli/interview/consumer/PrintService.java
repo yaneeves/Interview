@@ -1,6 +1,6 @@
-package com.intel.aa.interview.consumer;
+package com.mobli.interview.consumer;
 
-import com.intel.aa.interview.data.SmsMessage;
+import com.mobli.interview.data.SmsMessage;
 
 public class PrintService implements SmsConsumer {
 
@@ -9,7 +9,6 @@ public class PrintService implements SmsConsumer {
     @Override
     public synchronized void consume(SmsMessage message) {
         messageCounter++;
-//        System.out.println(message.getUserId() + ", " + message.getText());
         System.out.println(messageCounter);
     }
 }

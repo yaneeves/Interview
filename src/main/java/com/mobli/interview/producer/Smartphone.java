@@ -1,7 +1,7 @@
-package com.intel.aa.interview.producer;
+package com.mobli.interview.producer;
 
-import com.intel.aa.interview.broker.MessageBroker;
-import com.intel.aa.interview.data.SmsMessage;
+import com.mobli.interview.broker.MessageBroker;
+import com.mobli.interview.data.SmsMessage;
 
 import java.util.Date;
 import java.util.UUID;

@@ -1,15 +1,11 @@
-package com.intel.aa.interview.consumer;
+package com.mobli.interview.consumer;
 
-import com.intel.aa.interview.data.SmsMessage;
+import com.mobli.interview.data.SmsMessage;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class WordCountServiceImpl implements WordCountService {
-
-    @Override
-    public Map<String, Integer> getUserWords(String userId) {
-        return null;
-    }
 
     @Override
     public Map<String, Integer> getTotalWords() {
@@ -18,7 +14,6 @@ public class WordCountServiceImpl implements WordCountService {
 
     @Override
     public void consume(SmsMessage message) {
-        System.out.println("TODO.");
-        //TODO
+
     }
 }

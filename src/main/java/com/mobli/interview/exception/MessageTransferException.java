@@ -1,4 +1,4 @@
-package com.intel.aa.interview.exception;
+package com.mobli.interview.exception;
 
 public class MessageTransferException extends Exception {
 

@@ -1,7 +1,7 @@
-package com.intel.aa.interview.consumer;
+package com.mobli.interview.consumer;
 
 
-import com.intel.aa.interview.data.SmsMessage;
+import com.mobli.interview.data.SmsMessage;
 
 public interface SmsConsumer {
 

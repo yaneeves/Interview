@@ -1,7 +1,7 @@
-package com.intel.aa.interview.broker;
+package com.mobli.interview.broker;
 
-import com.intel.aa.interview.consumer.SmsConsumer;
-import com.intel.aa.interview.data.SmsMessage;
+import com.mobli.interview.consumer.SmsConsumer;
+import com.mobli.interview.data.SmsMessage;
 
 public interface MessageBroker {
 
