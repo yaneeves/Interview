@@ -6,6 +6,8 @@ Interviews
 1. Print service – prints all the messages to the console.
 2. Word count service – Counts the total occurrences per word in a message
 
+###Prerequisite
+Download and install maven (http://maven.apache.org/download.cgi)
 
 ###Part I – Implementation
 Your task is to implement the scenario described above, where some of the classes are already given. You will need to implement the following interfaces:
