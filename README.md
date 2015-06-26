@@ -22,6 +22,6 @@ Comments:
 * The word count should not be case sensitive
 
 ###Part II – Logging
-You're team leader asked you to add logging to your app using a common logging framework (for example log4j).
-Please add such dependency to your project pom file and create an INFO log call every time SimpleSmsProducer send a message to the broker.
+Please add to the project a logging framework that you are familiar with.
+Please create an INFO level log every time that SimpleSmsProducer send a message to the broker.
  
