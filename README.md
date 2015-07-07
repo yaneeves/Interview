@@ -25,4 +25,5 @@ Comments:
 ###Part II – Logging
 Please add to the project a logging framework that you are familiar with.
 Please create an INFO level log every time that SimpleSmsProducer send a message to the broker.
- 
+
+When finished please create a new branch (under your name) and push it to our github
