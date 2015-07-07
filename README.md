@@ -20,6 +20,7 @@ Run the program using the test class `SmartphoneTest`.
 Comments:
 * Please make sure that your MessageBrokerImpl is thread safe as multiple producers and consumers could use the broker at the same time
 * The word count should not be case sensitive
+* Sending a message to a consumer could potentially take some time. Make sure that increasing the number of consumers won't impact dramatically the time it takes the broker to send messages to all consumers
 
 ###Part II – Logging
 Please add to the project a logging framework that you are familiar with.
